@@ -11,6 +11,9 @@ import CreatePuzzle from "./pages/Puzzle/CreatePuzzle.tsx";
 import EditPuzzle from "./pages/Puzzle/EditPuzzle.tsx";
 import ArchivePuzzle from "./pages/Puzzle/ArchivePuzzle.tsx";
 import SharePuzzle from "./pages/Puzzle/SharePuzzle.tsx";
+import MyCompletedPuzzlez from "./pages/My-Completed-Puzzlez.tsx";
+import MyPuzzlez from "./pages/My-puzzlez.tsx";
+import Approve from "./pages/Approve.tsx";
 function App() {
     return (
         <Router>
@@ -27,6 +30,9 @@ function App() {
                 <Route path="/Edit Puzzle" element={<EditPuzzle/>} />
                 <Route path="/Archive Puzzle" element={<ArchivePuzzle/>} />
                 <Route path="/Share Puzzle" element={<SharePuzzle/>} />
+                <Route path="/My Completed Puzzlez" element={<MyCompletedPuzzlez/>} />
+                <Route path="/My Puzzlez" element={<MyPuzzlez/>} />
+                <Route path="/Approve Puzzlez" element={<Approve/>} />
             </Routes>
         </Router>
     );

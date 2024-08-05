@@ -50,6 +50,18 @@ function Nav() {
                             <NavDropdown.Item>Share Puzzle</NavDropdown.Item>
                         </LinkContainer>
                     </NavDropdown>
+
+                    <LinkContainer className={"margin"} to="/My Puzzlez">
+                        <BootstrapNav.Link>My Puzzlez</BootstrapNav.Link>
+                    </LinkContainer>
+
+                    <LinkContainer className={"margin"} to="/My Completed Puzzlez">
+                        <BootstrapNav.Link>My Completed Puzzlez</BootstrapNav.Link>
+                    </LinkContainer>
+
+                    <LinkContainer className={"margin"} to="/Approve Puzzlez">
+                        <BootstrapNav.Link>Approve Completion</BootstrapNav.Link>
+                    </LinkContainer>
                 </BootstrapNav>
             </Navbar.Collapse>
         </Navbar>
