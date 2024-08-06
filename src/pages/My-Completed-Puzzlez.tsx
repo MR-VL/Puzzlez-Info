@@ -1,6 +1,5 @@
 import React from 'react';
 import myPuzzle from  "../Assets/My completed puzzles.jpg"
-import myPuzzle2 from "../Assets/my puzzles 2.jpg";
 
 const myCompletedPuzzlez: React.FC = () => {
     return (
