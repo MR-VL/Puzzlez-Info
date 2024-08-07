@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
 import Nav from './components/Nav';
 import Security from './pages/Security/Security.tsx';
 import Home from './pages/Home';
@@ -19,7 +19,8 @@ function App() {
         <Router>
             <Nav />
             <Routes>
-                <Route path="/" element={<Home/>} />
+                <Route path="/Puzzlez-Info/" element={<Navigate to="/Home" />} />
+                <Route path="/Home" element={<Home/>} />
                 <Route path="/Security" element={<Security />} />
                 <Route path="/Registration" element={<Registration/>} />
                 <Route path="/Authentication" element={<Authentication/>} />

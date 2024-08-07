@@ -4,14 +4,14 @@ import './nav.css'
 function Nav() {
     return (
         <Navbar bg="light" expand="lg">
-            <LinkContainer to="/">
+            <LinkContainer to="/Home">
                 <Navbar.Brand className={"margin"}>Puzzlez Info</Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <BootstrapNav className="mr-auto">
 
-                    <LinkContainer className={"margin"} to="/">
+                    <LinkContainer className={"margin"} to="/Home">
                         <BootstrapNav.Link>Home</BootstrapNav.Link>
                     </LinkContainer>
 
