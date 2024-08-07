@@ -1,10 +1,11 @@
 import React from "react";
-
+import loginImage from "../../Assets/lock.jpg";
 
 const Logout: React.FC = () => {
     return (
         <div className={"login-container"}>
             <div>
+
                 <div className="description">
                     <h1>Log Out Process</h1>
                     <p>
@@ -33,9 +34,12 @@ const Logout: React.FC = () => {
 
 
                 </div>
-
             </div>
 
+            <div className="images">
+                <img src={loginImage} alt="Login screen" className="login-image"/>
+
+            </div>
         </div>
 
 
