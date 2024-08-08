@@ -1,12 +1,15 @@
 import React from 'react';
 import myPuzzle from  "../Assets/My Puzzles.jpg"
 import myPuzzle2 from  "../Assets/my puzzles 2.jpg"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons'
 const myPuzzlez: React.FC = () => {
+    const element = <FontAwesomeIcon icon={faPuzzlePiece} style={{ color: '#FF5F1F' }} />;
     return (
         <div className={"login-container"}>
             <div>
                 <div className="description">
-                    <h1>My Puzzle Page</h1>
+                    <h1>My {element}Puzzle Page</h1>
                     <p>
                         Detailing the puzzle management process of Puzzlez.
                         <br/>

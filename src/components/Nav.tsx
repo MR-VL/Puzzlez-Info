@@ -1,11 +1,14 @@
 import { Navbar, NavDropdown, Nav as BootstrapNav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './nav.css'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons'
 function Nav() {
+    const element = <FontAwesomeIcon icon={faPuzzlePiece} style={{ color: '#FF5F1F' }} />;
     return (
         <Navbar bg="light" expand="lg">
             <LinkContainer to="/Home">
-                <Navbar.Brand className={"margin"}>Puzzlez Info</Navbar.Brand>
+                <Navbar.Brand className={"margin"}>{element}Puzzlez Info</Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
