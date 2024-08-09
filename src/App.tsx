@@ -15,25 +15,26 @@ import MyCompletedPuzzlez from "./pages/My-Completed-Puzzlez.tsx";
 import MyPuzzlez from "./pages/My-puzzlez.tsx";
 import Approve from "./pages/Approve.tsx";
 function App() {
+    const base = '/Puzzlez-Info';
     return (
         <Router>
             <Nav />
             <Routes>
-                <Route path="/Puzzlez-Info/" element={<Navigate to="/Home" />} />
-                <Route path="/Home" element={<Home/>} />
-                <Route path="/Security" element={<Security />} />
-                <Route path="/Registration" element={<Registration/>} />
-                <Route path="/Authentication" element={<Authentication/>} />
-                <Route path="/Login" element={<Login/>} />
-                <Route path="/Logout" element={<Logout/>} />
-                <Route path="/Puzzle" element={<Puzzle/>} />
-                <Route path="/Create Puzzle" element={<CreatePuzzle/>} />
-                <Route path="/Edit Puzzle" element={<EditPuzzle/>} />
-                <Route path="/Archive Puzzle" element={<ArchivePuzzle/>} />
-                <Route path="/Share Puzzle" element={<SharePuzzle/>} />
-                <Route path="/My Completed Puzzlez" element={<MyCompletedPuzzlez/>} />
-                <Route path="/My Puzzlez" element={<MyPuzzlez/>} />
-                <Route path="/Approve Puzzlez" element={<Approve/>} />
+                <Route path="/Puzzlez-Info/" element={<Navigate to={`${base}/Home`} />} />
+                <Route path={`${base}/Home`} element={<Home/>} />
+                <Route path={`${base}/Security`} element={<Security />} />
+                <Route path={`${base}/Registration`} element={<Registration/>} />
+                <Route path={`${base}/Authentication`} element={<Authentication/>} />
+                <Route path={`${base}/Login`} element={<Login/>} />
+                <Route path={`${base}/Logout`} element={<Logout/>} />
+                <Route path={`${base}/Puzzle`} element={<Puzzle/>} />
+                <Route path={`${base}/Create-Puzzle`} element={<CreatePuzzle/>} />
+                <Route path={`${base}/Edit-Puzzle`} element={<EditPuzzle/>} />
+                <Route path={`${base}/Archive-Puzzle`} element={<ArchivePuzzle/>} />
+                <Route path={`${base}/Share-Puzzle`} element={<SharePuzzle/>} />
+                <Route path={`${base}/My-Completed-Puzzlez`} element={<MyCompletedPuzzlez/>} />
+                <Route path={`${base}/My-Puzzlez`} element={<MyPuzzlez/>} />
+                <Route path={`${base}/Approve-Puzzlez`} element={<Approve/>} />
             </Routes>
         </Router>
     );
