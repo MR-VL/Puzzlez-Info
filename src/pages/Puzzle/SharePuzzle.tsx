@@ -1,6 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons'
+import CreateImage from "../../Assets/community.png";
 
 const sharePuzzle: React.FC = () => {
     const element = <FontAwesomeIcon icon={faPuzzlePiece} style={{ color: '#FF5F1F' }} />;
@@ -40,7 +41,9 @@ const sharePuzzle: React.FC = () => {
 
 
             </div>
-
+            <div className={"flex-column login-image"}>
+                <img src={CreateImage} className={"images  w-100"} alt={"My puzzles screen"}/>
+            </div>
 
         </div>
     );
